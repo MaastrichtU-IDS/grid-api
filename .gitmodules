@@ -1,0 +1,3 @@
+[submodule "docker-compose-prod"]
+	path = docker-compose-prod
+	url = https://github.com/MaastrichtU-IDS/docker-compose-prod.git
