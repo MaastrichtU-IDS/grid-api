@@ -1,8 +1,17 @@
 <h1 align="center"><a href="https://api-platform.com"><img src="https://api-platform.com/logo-250x250.png" alt="API Platform"></a></h1>
 ## IDS deployment
 
+https://api-platform.com/docs/deployment/docker-compose
+
 ```bash
-git clone https://github.com/MaastrichtU-IDS/grid-api.git
+git clone --recursive https://github.com/MaastrichtU-IDS/grid-api.git
+docker-compose -f docker-compose-prod/docker-compose.build.yml pull --ignore-pull-failures
+docker-compose -f docker-compose-prod/docker-compose.build.yml build --pull
+# Push to container registry?
+docker-compose -f docker-compose-prod/docker-compose.build.yml push
+
+docker-compose -f docker-compose-prod/docker-compose.yml up -d
+
 docker-compose pull
 docker-compose up -d
 ```
