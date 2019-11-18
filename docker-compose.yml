@@ -80,7 +80,7 @@ services:
       - ./client:/usr/src/client:rw,cached
     ports:
       - target: 3000
-        published: 80
+        published: 8084
         protocol: tcp
 
   admin:
@@ -94,7 +94,7 @@ services:
       - ./admin:/usr/src/admin:rw,cached
     ports:
       - target: 3000
-        published: 81
+        published: 8085
         protocol: tcp
     environment:
       - VIRTUAL_HOST=grid-admin.137.120.31.101.nip.io
