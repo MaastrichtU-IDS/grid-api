@@ -1,7 +1,9 @@
 <h1 align="center"><a href="https://api-platform.com"><img src="https://api-platform.com/logo-250x250.png" alt="API Platform"></a></h1>
-Using [API platform Docker Compose deployment](https://api-platform.com/docs/deployment/docker-compose).
+Global Repository of Injury Data API
 
 ## Deployment at IDS
+
+Using [API platform Docker Compose deployment](https://api-platform.com/docs/deployment/docker-compose).
 
 On IDS servers we recommend using the [restart_api_platform.sh](https://github.com/MaastrichtU-IDS/grid-api/blob/master/restart_api_platform.sh) bash script
 
