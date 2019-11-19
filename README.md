@@ -1,10 +1,15 @@
 <h1 align="center"><a href="https://api-platform.com"><img src="https://api-platform.com/logo-250x250.png" alt="API Platform"></a></h1>
-## IDS deployment
+Using [API platform Docker Compose deployment](https://api-platform.com/docs/deployment/docker-compose).
 
-https://api-platform.com/docs/deployment/docker-compose
+## Deployment at IDS
+
+On IDS servers we recommend using the [restart_api_platform.sh](https://github.com/MaastrichtU-IDS/grid-api/blob/master/restart_api_platform.sh) bash script
 
 ```bash
 git clone --recursive https://github.com/MaastrichtU-IDS/grid-api.git
+./restart_api_platform.sh
+
+# Or build manually
 docker-compose -f docker-compose-prod/docker-compose.build.yml pull --ignore-pull-failures
 docker-compose -f docker-compose-prod/docker-compose.build.yml build --pull
 # Push to container registry?
