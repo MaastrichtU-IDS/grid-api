@@ -18,10 +18,23 @@ docker-compose -f docker-compose-prod/docker-compose.build.yml build --pull
 docker-compose -f docker-compose-prod/docker-compose.build.yml push
 
 docker-compose -f docker-compose-prod/docker-compose.yml up -d
-
-docker-compose pull
-docker-compose up -d
 ```
+
+### Generate schema
+
+See [API-platform documentation](https://api-platform.com/docs/schema-generator/getting-started/).
+
+```bash
+docker-compose -f docker-compose-prod/docker-compose.yml exec php vendor/bin/schema
+
+docker-compose -f docker-compose-prod/docker-compose.yml exec bash
+
+# Activate generator
+composer require --dev api-platform/schema-generator
+
+```
+
+
 
 ---
 

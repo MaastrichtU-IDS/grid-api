@@ -1,0 +1,24 @@
+# api/config/schema.yaml
+# The list of types and properties we want to use
+types:
+    # Parent class of Person
+    Thing:
+        properties:
+            name: ~
+    Person:
+        properties:
+            familyName: ~
+            givenName: ~
+            additionalName: ~
+            address: ~
+    PostalAddress:
+        # Disable the generation of the class hierarchy for this type
+        parent: false
+        properties:
+            # Force the type of the addressCountry property to text
+            addressCountry: { range: "Text" }
+            addressLocality: ~
+            addressRegion: ~
+            postOfficeBoxNumber: ~
+            postalCode: ~
+            streetAddress: ~
