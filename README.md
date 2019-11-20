@@ -29,9 +29,14 @@ docker-compose -f docker-compose-prod/docker-compose.yml exec php vendor/bin/sch
 
 docker-compose -f docker-compose-prod/docker-compose.yml exec bash
 
-# Activate generator
+# Activate generator on local
+# Install PHP Composer
+sudo apt install curl php-cli php-mbstring git unzip php-xml
+
 composer require --dev api-platform/schema-generator
 
+# Generate types from schema.yaml
+vendor/bin/schema generate-types api/src/ api/config/schema.yaml
 ```
 
 
