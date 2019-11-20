@@ -3,15 +3,24 @@
 types:
     # Parent class of Person
     Thing:
+        namespaces:
+            class: "App\\Entity"
+            interface: "Schema\\Model"
         properties:
             name: ~
     Person:
+        namespaces:
+            class: "App\\Entity"
+            interface: "Schema\\Model"
         properties:
             familyName: ~
             givenName: ~
             additionalName: ~
             address: ~
     PostalAddress:
+        namespaces:
+            class: "App\\Entity"
+            interface: "Schema\\Model"
         # Disable the generation of the class hierarchy for this type
         parent: false
         properties:
