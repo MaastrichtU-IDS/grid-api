@@ -1,7 +1,8 @@
 # RDFa files
 rdfa:
-    # - https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio/release/sio-subset-core.owl
     - http://vocab.linkeddata.es/vgo/GameOntologyv3.owl
+    # - https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio/release/sio-subset-core.owl
+    
     # Prototype
     -
         # RDFa URI to use
@@ -13,9 +14,6 @@ rdfa:
 relations:
     # Default:
     - https://purl.org/goodrelations/v1.owl
-
-# Debug mode
-# debug:                false
 
 # IDs configuration
 id:
@@ -32,6 +30,8 @@ useInterface:         false
 checkIsGoodRelations: false
 # A license or any text to use as header of generated files
 header:               false # Example: // (c) Kévin Dunglas <dunglas@gmail.com>
+# Debug mode
+# debug:                false
 
 # PHP namespaces
 namespaces:
@@ -69,82 +69,61 @@ types:
         vocabularyNamespace: http://purl.org/net/VideoGameOntology#
     Achievement:
         vocabularyNamespace: http://purl.org/net/VideoGameOntology#
-        # vocabularyNamespace: http://semanticscience.org/ontology/sio.owl#
+    # SIO_000001:
+    #     vocabularyNamespace: http://semanticscience.org/resource/
+
 
     # # Prototype
     # id:
-
     #     # Namespace of the vocabulary the type belongs to.
     #     vocabularyNamespace:  'http://schema.org/'
-
     #     # Is the class abstract? (null to guess)
     #     abstract:             null
-
     #     # Is the class embeddable?
     #     embeddable:           false
-
     #     # Type namespaces
     #     namespaces:
-
     #         # The namespace for the generated class (override any other defined namespace)
     #         class:                null
-
     #         # The namespace for the generated interface (override any other defined namespace)
     #         interface:            null
     #     doctrine:
-
     #         # The Doctrine inheritance mapping type (override the guessed one)
     #         inheritanceMapping:   null
-
     #     # The parent class, set to false for a top level class
     #     parent:               false
-
     #     # If declaring a custom class, this will be the class from which properties type will be guessed
     #     guessFrom:            Thing
-
     #     # Import all existing properties
     #     allProperties:        false
-
     #     # Properties of this type to use
     #     properties:
-
     #         # Prototype
     #         id:
-
     #             # The property range
     #             range:                null # Example: Offer
-
     #             # The relation table name
     #             relationTableName:    null # Example: organization_member
     #             cardinality:          unknown # One of "(0..1)"; "(0..*)"; "(1..1)"; "(1..*)"; "(*..0)"; "(*..1)"; "(*..*)"; "unknown"
-
     #             # The doctrine column annotation content
     #             ormColumn:            null # Example: type="decimal", precision=5, scale=1, options={"comment" = "my comment"}
-
     #             # Symfony Serialization Groups
     #             groups:               []
-
     #             # Is the property readable?
     #             readable:             true
-
     #             # Is the property writable?
     #             writable:             true
-
     #             # Is the property nullable?
     #             nullable:             true
-
     #             # The property unique
     #             unique:               false
-
     #             # Is the property embedded?
     #             embedded:             false
-
     #             # The property columnPrefix
     #             columnPrefix:         false
 
 # Annotation generators to use
 annotationGenerators:
-
     # Defaults:
     - ApiPlatform\SchemaGenerator\AnnotationGenerator\PhpDocAnnotationGenerator
     - ApiPlatform\SchemaGenerator\AnnotationGenerator\DoctrineOrmAnnotationGenerator
