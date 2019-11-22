@@ -1,24 +1,18 @@
 # RDFa files
 rdfa:
     - http://vocab.linkeddata.es/vgo/GameOntologyv3.owl
-    # - https://raw.githubusercontent.com/MaastrichtU-IDS/d2s-scripts-repository/master/resources/sio-subset-core-apiplatform.owl
-    # - https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio/release/sio-subset-core.owl
+    - 
+        uri: https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio/release/sio-subset-core.owl
+        format: rdfxml
     
-    # # Prototype
-    # -
-    #     # RDFa URI to use
-    #     uri:                  'https://schema.org/docs/schema_org_rdfa.html' # Example: https://schema.org/docs/schema_org_rdfa.html
-    #     # RDFa URI data format
-    #     format:               null # Example: rdfxml
-
-# Schema.org's types to use
+# Types to use from the imported ontologies
 types:
     Session:
         vocabularyNamespace: http://purl.org/net/VideoGameOntology#
     Achievement:
         vocabularyNamespace: http://purl.org/net/VideoGameOntology#
-    # SIO_000001:
-    #     vocabularyNamespace: http://semanticscience.org/resource/
+    SIO_000001:
+        vocabularyNamespace: http://semanticscience.org/resource/
 
 
 # OWL relation files to use
@@ -26,14 +20,15 @@ relations:
     # Default:
     - https://purl.org/goodrelations/v1.owl
 
+
 # PHP namespaces
 namespaces:
     # The namespace of the generated entities
-    entity:               Entity # Example: Acme\Entity
+    entity:               Entity # Example: App\Entity
     # The namespace of the generated enumerations
-    enum:                 Enum # Example: Acme\Enum
+    enum:                 Enum # Example: App\Enum
     # The namespace of the generated interfaces
-    interface:            Model # Example: Acme\Model
+    interface:            Model # Example: App\Model
 
 
 # IDs configuration
