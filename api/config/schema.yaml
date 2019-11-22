@@ -1,6 +1,7 @@
 # RDFa files
 rdfa:
     - http://vocab.linkeddata.es/vgo/GameOntologyv3.owl
+    # - https://raw.githubusercontent.com/MaastrichtU-IDS/d2s-scripts-repository/master/resources/sio-subset-core-apiplatform.owl
     # - https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio/release/sio-subset-core.owl
     
     # # Prototype
