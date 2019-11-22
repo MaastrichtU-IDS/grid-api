@@ -1,5 +1,5 @@
 import React from 'react';
-import { HydraAdmin, ResourceGuesser } from '@api-platform/admin';
+import { HydraAdmin, ResourceGuesser, ListGuesser, FieldGuesser } from '@api-platform/admin';
 // Full examplet at https://github.com/api-platform/demo/blob/master/admin/src/App.js
 
 const AchievementList = props => (
