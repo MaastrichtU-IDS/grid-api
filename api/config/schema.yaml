@@ -3,65 +3,12 @@ rdfa:
     - http://vocab.linkeddata.es/vgo/GameOntologyv3.owl
     # - https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio/release/sio-subset-core.owl
     
-    # Prototype
-    -
-        # RDFa URI to use
-        uri:                  'https://schema.org/docs/schema_org_rdfa.html' # Example: https://schema.org/docs/schema_org_rdfa.html
-        # RDFa URI data format
-        format:               null # Example: rdfxml
-
-# OWL relation files to use
-relations:
-    # Default:
-    - https://purl.org/goodrelations/v1.owl
-
-# IDs configuration
-id:
-    # Automatically add an id field to entities
-    generate:             true
-    # The ID generation strategy to use ("none" to not let the database generate IDs).
-    generationStrategy:   auto # One of "auto"; "none"; "uuid"; "mongoid"
-    # Is the ID writable? Only applicable if "generationStrategy" is "uuid".
-    writable:             false
-
-# Generate interfaces and use Doctrine's Resolve Target Entity feature
-useInterface:         false
-# Emit a warning if a property is not derived from GoodRelations
-checkIsGoodRelations: false
-# A license or any text to use as header of generated files
-header:               false # Example: // (c) Kévin Dunglas <dunglas@gmail.com>
-# Debug mode
-# debug:                false
-
-# PHP namespaces
-namespaces:
-    # The namespace of the generated entities
-    entity:               App\Entity # Example: Acme\Entity
-    # The namespace of the generated enumerations
-    enum:                 App\Enum # Example: Acme\Enum
-    # The namespace of the generated interfaces
-    interface:            App\Model # Example: Acme\Model
-
-# Doctrine
-doctrine:
-    # Use Doctrine's ArrayCollection instead of standard arrays
-    useCollection:        true
-    # The Resolve Target Entity Listener config file pass
-    resolveTargetEntityConfigPath: null
-
-# Symfony Validator Component
-validator:
-    # Generate @Assert\Type annotation
-    assertType:           false
-
-# The value of the phpDoc's @author annotation
-author:               false # Example: Kévin Dunglas <dunglas@gmail.com>
-# Visibility of entities fields
-fieldVisibility:      private # One of "private"; "protected"; "public"
-# Set this flag to false to not generate getter, setter, adder and remover methods
-accessorMethods:      true
-# Set this flag to true to generate fluent setter, adder and remover methods
-fluentMutatorMethods: false
+    # # Prototype
+    # -
+    #     # RDFa URI to use
+    #     uri:                  'https://schema.org/docs/schema_org_rdfa.html' # Example: https://schema.org/docs/schema_org_rdfa.html
+    #     # RDFa URI data format
+    #     format:               null # Example: rdfxml
 
 # Schema.org's types to use
 types:
@@ -73,6 +20,63 @@ types:
     #     vocabularyNamespace: http://semanticscience.org/resource/
 
 
+# OWL relation files to use
+relations:
+    # Default:
+    - https://purl.org/goodrelations/v1.owl
+
+# PHP namespaces
+namespaces:
+    # The namespace of the generated entities
+    entity:               Entity # Example: Acme\Entity
+    # The namespace of the generated enumerations
+    enum:                 Enum # Example: Acme\Enum
+    # The namespace of the generated interfaces
+    interface:            Model # Example: Acme\Model
+
+
+# IDs configuration
+# id:
+#     # Automatically add an id field to entities
+#     generate:             true
+#     # The ID generation strategy to use ("none" to not let the database generate IDs).
+#     generationStrategy:   auto # One of "auto"; "none"; "uuid"; "mongoid"
+#     # Is the ID writable? Only applicable if "generationStrategy" is "uuid".
+#     writable:             false
+
+# # Generate interfaces and use Doctrine's Resolve Target Entity feature
+# useInterface:         false
+# # Emit a warning if a property is not derived from GoodRelations
+# checkIsGoodRelations: false
+# # A license or any text to use as header of generated files
+# header:               false # Example: // (c) Kévin Dunglas <dunglas@gmail.com>
+# Debug mode
+# debug:                false
+
+# Doctrine
+# doctrine:
+#     # Use Doctrine's ArrayCollection instead of standard arrays
+#     useCollection:        true
+#     # The Resolve Target Entity Listener config file pass
+#     resolveTargetEntityConfigPath: null
+
+# Symfony Validator Component
+# validator:
+#     # Generate @Assert\Type annotation
+#     assertType:           false
+
+# The value of the phpDoc's @author annotation
+# author:               false # Example: Kévin Dunglas <dunglas@gmail.com>
+# # Visibility of entities fields
+# fieldVisibility:      private # One of "private"; "protected"; "public"
+# # Set this flag to false to not generate getter, setter, adder and remover methods
+# accessorMethods:      true
+# # Set this flag to true to generate fluent setter, adder and remover methods
+# fluentMutatorMethods: false
+
+
+# For types defined manually
+# types:
     # # Prototype
     # id:
     #     # Namespace of the vocabulary the type belongs to.
@@ -123,10 +127,10 @@ types:
     #             columnPrefix:         false
 
 # Annotation generators to use
-annotationGenerators:
-    # Defaults:
-    - ApiPlatform\SchemaGenerator\AnnotationGenerator\PhpDocAnnotationGenerator
-    - ApiPlatform\SchemaGenerator\AnnotationGenerator\DoctrineOrmAnnotationGenerator
-    - ApiPlatform\SchemaGenerator\AnnotationGenerator\ApiPlatformCoreAnnotationGenerator
-    - ApiPlatform\SchemaGenerator\AnnotationGenerator\ConstraintAnnotationGenerator
-    - ApiPlatform\SchemaGenerator\AnnotationGenerator\SerializerGroupsAnnotationGenerator
+# annotationGenerators:
+#     # Defaults:
+#     - ApiPlatform\SchemaGenerator\AnnotationGenerator\PhpDocAnnotationGenerator
+#     - ApiPlatform\SchemaGenerator\AnnotationGenerator\DoctrineOrmAnnotationGenerator
+#     - ApiPlatform\SchemaGenerator\AnnotationGenerator\ApiPlatformCoreAnnotationGenerator
+#     - ApiPlatform\SchemaGenerator\AnnotationGenerator\ConstraintAnnotationGenerator
+#     - ApiPlatform\SchemaGenerator\AnnotationGenerator\SerializerGroupsAnnotationGenerator
