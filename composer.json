@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "api-platform/schema-generator": "^2.2"
+    }
+}

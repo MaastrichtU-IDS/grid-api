@@ -24,22 +24,25 @@ docker-compose -f docker-compose-prod/docker-compose.yml up -d
 
 See [API-platform documentation](https://api-platform.com/docs/schema-generator/getting-started/).
 
+* Install
+
 ```bash
 docker-compose -f docker-compose-prod/docker-compose.yml exec php vendor/bin/schema
 
 docker-compose -f docker-compose-prod/docker-compose.yml exec bash
 
-# Activate generator on local
-# Install PHP Composer
+# Install PHP Composer and activate generator on local
 sudo apt install curl php-cli php-mbstring git unzip php-xml
-
 composer require --dev api-platform/schema-generator
-
-# Generate types from schema.yaml
-vendor/bin/schema generate-types api/src/ api/config/schema.yaml
+# or just install schema-generator from composer.json
+composer install
 ```
 
+* Generate types from [api/config/schema.yaml](https://github.com/MaastrichtU-IDS/grid-api/blob/master/api/config/schema.yaml).
 
+```bash
+vendor/bin/schema generate-types api/src/ api/config/schema.yaml
+```
 
 ---
 
