@@ -1,24 +1,21 @@
-<h1 align="center"><a href="https://api-platform.com"><img src="https://api-platform.com/logo-250x250.png" alt="API Platform"></a></h1>
-Global Repository of Injury Data API
-
 ## Deployment at IDS
 
 Using [API platform Docker Compose deployment](https://api-platform.com/docs/deployment/docker-compose).
 
-On IDS servers we recommend using the [restart_api_platform.sh](https://github.com/MaastrichtU-IDS/grid-api/blob/master/restart_api_platform.sh) bash script
+On **IDS servers** we recommend using the [restart_api_platform.sh](https://github.com/MaastrichtU-IDS/grid-api/blob/master/restart_api_platform.sh) bash script
 
 ```bash
 git clone --recursive https://github.com/MaastrichtU-IDS/grid-api.git
 ./restart_api_platform.sh
 
-# Or build manually
+# Start build manually
 docker-compose -f docker-compose-prod/docker-compose.build.yml pull --ignore-pull-failures
 docker-compose -f docker-compose-prod/docker-compose.build.yml build --pull
-# Push to container registry?
-docker-compose -f docker-compose-prod/docker-compose.build.yml push
 
 docker-compose -f docker-compose-prod/docker-compose.yml up -d
 ```
+
+> Should we push to container registry? `docker-compose -f docker-compose-prod/docker-compose.build.yml push`
 
 ### Generate schema
 
@@ -27,15 +24,11 @@ See [API-platform documentation](https://api-platform.com/docs/schema-generator/
 * Install
 
 ```bash
-docker-compose -f docker-compose-prod/docker-compose.yml exec php vendor/bin/schema
-
-docker-compose -f docker-compose-prod/docker-compose.yml exec bash
-
-# Install PHP Composer and activate generator on local
+# Just install schema-generator from composer.json
+composer install
+# Install PHP Composer and dependencies if needed
 sudo apt install curl php-cli php-mbstring git unzip php-xml
 composer require --dev api-platform/schema-generator
-# or just install schema-generator from composer.json
-composer install
 ```
 
 * Generate types from [api/config/schema.yaml](https://github.com/MaastrichtU-IDS/grid-api/blob/master/api/config/schema.yaml).
@@ -44,7 +37,24 @@ composer install
 vendor/bin/schema generate-types api/src/ api/config/schema.yaml
 ```
 
+> The PHP types for this schema has now been generated in `api/src/Entity`
+
+## Test API platform locally
+
+```bash
+# In grid-api
+docker-compose up -d
+docker-compose down
+```
+
+> Navigate to
+>
+> * [http://localhost:8080](http://localhost:8080/) for the API
+> * [http://localhost:8085](http://localhost:8085/) for the admin
+
 ---
+
+## Original readme
 
 API Platform is a next-generation web framework designed to easily create API-first projects without compromising extensibility
 and flexibility:
