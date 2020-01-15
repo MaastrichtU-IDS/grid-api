@@ -54,7 +54,9 @@ docker-compose down
 
 ## Deploy in production
 
-To deploy in production we might need to customize secrets and password in the [.env](https://github.com/MaastrichtU-IDS/grid-api/blob/master/.env) file.
+Warning: to deploy in production we might need to customize secrets and password in the `.env` file.
+
+See example of [.env file here](https://github.com/MaastrichtU-IDS/grid-api/blob/master/.env.sample).
 
 ---
 
