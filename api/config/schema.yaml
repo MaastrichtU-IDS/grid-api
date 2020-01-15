@@ -1,4 +1,4 @@
-# RDFa files
+# RDFa/OWL files to import
 rdfa:
     - http://vocab.linkeddata.es/vgo/GameOntologyv3.owl
     - 
@@ -13,6 +13,8 @@ types:
         vocabularyNamespace: http://purl.org/net/VideoGameOntology#
     SIO_000001:
         vocabularyNamespace: http://semanticscience.org/resource/
+        allProperties:        false
+        
 
 
 # OWL relation files to use
