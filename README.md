@@ -52,6 +52,10 @@ docker-compose down
 > * [http://localhost:8080](http://localhost:8080/) for the API
 > * [http://localhost:8085](http://localhost:8085/) for the admin
 
+## Deploy in production
+
+To deploy in production we might need to customize secrets and password in the [.env](https://github.com/MaastrichtU-IDS/grid-api/blob/master/.env) file.
+
 ---
 
 ## Create a new API platform
@@ -64,10 +68,10 @@ docker-compose down
 git submodule add https://github.com/MaastrichtU-IDS/docker-compose-prod.git
 ```
 
-* Change the `.env` file to provide your own parameters and URL
 * Change the main [docker-compose.yml](https://github.com/MaastrichtU-IDS/grid-api/blob/master/docker-compose.yml)
   * To remove h2-proxy
   * Change API and UI port to 8084 and 8085
+* Change the [.env](https://github.com/MaastrichtU-IDS/grid-api/blob/master/.env) file to provide your own parameters and URL
 * Define schema in [api/config/schema.yaml](https://github.com/MaastrichtU-IDS/grid-api/blob/master/api/config/schema.yaml)
 
 ---
