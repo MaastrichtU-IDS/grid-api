@@ -75,6 +75,8 @@ git submodule add https://github.com/MaastrichtU-IDS/docker-compose-prod.git
   * Change API and UI port to 8084 and 8085
 * Change the [.env](https://github.com/MaastrichtU-IDS/grid-api/blob/master/.env) file to provide your own parameters and URL
 * Define schema in [api/config/schema.yaml](https://github.com/MaastrichtU-IDS/grid-api/blob/master/api/config/schema.yaml)
+* Update API platform configuration (e.g. enable GraphQL)
+  * https://github.com/MaastrichtU-IDS/grid-api/blob/master/api/config/packages/api_platform.yaml
 
 ---
 

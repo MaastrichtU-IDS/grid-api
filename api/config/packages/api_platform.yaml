@@ -1,5 +1,6 @@
 api_platform:
-    title: Hello API Platform
+    title: GRID API Platform
+    description: An API for the Global Repository of Injury Data
     version: 1.0.0
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']

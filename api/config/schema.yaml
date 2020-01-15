@@ -21,6 +21,7 @@ types:
 relations:
     # Default:
     - https://purl.org/goodrelations/v1.owl
+    - https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio/release/sio-subset-core.owl
 
 
 # PHP namespaces
