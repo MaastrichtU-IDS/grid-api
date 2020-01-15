@@ -54,6 +54,24 @@ docker-compose down
 
 ---
 
+## Create a new API platform
+
+* Create repository by using template from https://github.com/api-platform/api-platform/
+
+* In this repository, get the submodule to compile the Docker Compose production
+
+```bash
+git submodule add https://github.com/MaastrichtU-IDS/docker-compose-prod.git
+```
+
+* Change the `.env` file to provide your own parameters and URL
+* Change the main [docker-compose.yml](https://github.com/MaastrichtU-IDS/grid-api/blob/master/docker-compose.yml)
+  * To remove h2-proxy
+  * Change API and UI port to 8084 and 8085
+* Define schema in [api/config/schema.yaml](https://github.com/MaastrichtU-IDS/grid-api/blob/master/api/config/schema.yaml)
+
+---
+
 ## Original readme
 
 API Platform is a next-generation web framework designed to easily create API-first projects without compromising extensibility
