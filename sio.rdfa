@@ -1,0 +1,426 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+  prefix="
+    owl: http://www.w3.org/2002/07/owl#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    dcterms: http://purl.org/dc/terms/
+    sio: http://semanticscience.org/resource/
+    schema: http://schema.org/"
+  >
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000016">
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000340"></div>
+    <div property="dcterms:description" xml:lang="en" content="A role is a realizable entity that describes behaviours, rights and obligations of an entity in some particular circumstance."></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="rdfs:label" xml:lang="en" content="role"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000355">
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000229">
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="dcterms:description" xml:lang="en" content="has output is a relation between an process and an entity, where the entity is present at the end of the process."></div>
+        <div property="sio:subset" xml:lang="en" content="sadi"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000132"></div>
+        <div property="rdfs:label" xml:lang="en" content="has output"></div>
+        <div property="sio:subset" content="core"></div>
+      </div>
+    </div>
+    <div property="rdfs:label" xml:lang="en" content="realizes"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="dcterms:description" xml:lang="en" content="realizes is a relation between a process and a realizable entity (role, function, disposition)."></div>
+  </div>
+  <div typeof="owl:TransitiveProperty" about="http://semanticscience.org/resource/SIO_000248">
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000352">
+        <div property="dcterms:description" xml:lang="en" content="a is causally related from b iff there is a causal chain of events from b to a"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000243"></div>
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="rdfs:label" xml:lang="en" content="is causally related from"></div>
+      </div>
+    </div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="precedes"></div>
+    <div property="dcterms:description" xml:lang="en" content="A transitive, temporal relation in which one process precedes (has occured earlier than) another process."></div>
+    <div property="sio:subset" content="core"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_001277">
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000628">
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="dcterms:description" xml:lang="en" content="refers to is a relation between one entity and the entity that it makes reference to."></div>
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000001"></div>
+        <div property="sio:subset" content="nlp+"></div>
+        <div property="rdfs:label" xml:lang="en" content="refers to"></div>
+      </div>
+    </div>
+    <div property="sio:subset" content="core"></div>
+    <div property="rdfs:label" xml:lang="en" content="has data item"></div>
+    <div property="dcterms:description" content="has data item is a relation between a dataset and any described / referrenced entity."></div>
+    <div rel="owl:inverseOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_001278">
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="dcterms:description" content="'is data item in' is a relation between an entity that is described or referenced in a dataset."></div>
+        <div property="rdfs:label" xml:lang="en" content="is data item in"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000628"></div>
+      </div>
+    </div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000793">
+    <div property="dcterms:description" xml:lang="en" content="measured at is a relation between a measurement value and the time measurement."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="measured at"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000687">
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000322"></div>
+        <div property="dcterms:description" xml:lang="en" content="exists at is a relation between an entity and a time measurement."></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="sio:subset" content="core"></div>
+        <div property="rdfs:label" xml:lang="en" content="exists at"></div>
+      </div>
+    </div>
+    <div property="sio:subset" content="core"></div>
+  </div>
+  <div typeof="owl:IrreflexiveProperty" about="http://semanticscience.org/resource/SIO_000059">
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000008">
+        <div property="dcterms:description" xml:lang="en" content="has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type."></div>
+        <div property="rdfs:label" xml:lang="en" content="has attribute"></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000001"></div>
+      </div>
+    </div>
+    <div property="sio:example" xml:lang="en" content="a collection of cars has as a car as a member"></div>
+    <div property="dcterms:description" xml:lang="en" content="has member is a mereological relation between a collection and an item."></div>
+    <div property="rdfs:label" xml:lang="en" content="has member"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:SymmetricProperty" about="http://semanticscience.org/resource/SIO_000204">
+    <div property="sio:equivalentTo" content="OBO_REL:adjacent_to"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div property="dcterms:description" xml:lang="en" content="A is adjacent to B iff there is a small, but non-zero distance between A and B"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:SymmetricProperty" about="http://semanticscience.org/resource/SIO_000322">
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000001"></div>
+        <div property="dcterms:description" xml:lang="en" content="A is spatiotemporally related to B iff A is in the spatial or temporal vicinity of B"></div>
+        <div property="rdfs:label" xml:lang="en" content="is spatiotemporally related to"></div>
+        <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+      </div>
+    </div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="is adjacent to"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="sio:subset" content="nlp"></div>
+  </div>
+  <div typeof="owl:DatatypeProperty" about="http://semanticscience.org/resource/SIO_000300">
+    <div property="dcterms:description" xml:lang="en" content="A relation between a informational entity and its actual value (numeric, date, text, etc)."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="nlp"></div>
+    <div property="rdfs:label" xml:lang="en" content="has value"></div>
+    <div property="sio:subset" content="relations"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="sio:subset" xml:lang="en" content="sadi"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#FunctionalProperty"></div>
+  </div>
+  <div typeof="owl:FunctionalProperty" about="http://semanticscience.org/resource/SIO_000221">
+    <div property="dcterms:description" xml:lang="en" content="has unit is a relation between a quantity and the unit it is a multiple of."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="has unit"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000008"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000005">
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000614"></div>
+    <div rel="owl:disjointWith" resource="http://semanticscience.org/resource/SIO_000340"></div>
+    <div property="dcterms:description" xml:lang="en" content="A quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="rdfs:label" xml:lang="en" content="quality"></div>
+  </div>
+  <div typeof="owl:TransitiveProperty" about="http://semanticscience.org/resource/SIO_000244">
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="sio:equivalentTo" content="OBO_REL:derives_from"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000352"></div>
+    <div property="rdfs:label" xml:lang="en" content="is derived from"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div property="dcterms:description" xml:lang="en" content="A transitive temporal relation in which one entity was materially formed from another non-identical entity."></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000313">
+    <div property="dcterms:description" xml:lang="en" content="is component part of is a relation between a component and a whole, where the component is instrinsic to the whole, and loss of the part would change the kind that the whole is."></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000310">
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="rdfs:label" xml:lang="en" content="is direct part of"></div>
+        <div property="dcterms:description" xml:lang="en" content="is direct part of is a relation between a specific part (at some level of granularity) and its whole."></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000093"></div>
+      </div>
+    </div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="is component part of"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000272">
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="dcterms:description" xml:lang="en" content="is variant of: a relationship indicating that two entities are different (by some measure), but either achieve the same objectives in different ways or are permutations of one another (temporal, logical or otherwise)"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000736">
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="sio:subset" content="core"></div>
+        <div property="rdfs:label" xml:lang="en" content="is comparable to"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000001"></div>
+        <div property="dcterms:description" xml:lang="en" content="is comparable to is a relation between two entities that share at least one feature whose value can be compared."></div>
+        <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#SymmetricProperty"></div>
+      </div>
+    </div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#TransitiveProperty"></div>
+    <div property="rdfs:label" xml:lang="en" content="is variant of"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#SymmetricProperty"></div>
+  </div>
+  <div typeof="owl:TransitiveProperty" about="http://semanticscience.org/resource/SIO_000203">
+    <div property="sio:subset" content="nlp"></div>
+    <div property="dcterms:description" xml:lang="en" content="A is connected to B iff there exists a fiat, material or temporal path between A and B. [S][T]"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000322"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="rdfs:label" xml:lang="en" content="is connected to"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#SymmetricProperty"></div>
+    <div property="sio:hasSynonym" xml:lang="en" content="interacts with"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000563">
+    <div property="dcterms:description" xml:lang="en" content="describes is a relation between one entity and another entity that it provides a description (detailed account of)."></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="describes"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000628"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000139">
+    <div property="sio:subset" content="core"></div>
+    <div property="sio:subset" xml:lang="en" content="sadi"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000132">
+        <div property="dcterms:description" xml:lang="en" content="has participant is a relation that describes the participation of the object in the (processual) subject."></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000322"></div>
+        <div rel="rdfs:domain" resource="http://semanticscience.org/resource/SIO_000006"></div>
+        <div property="sio:equivalentTo" content="OBO_REL:has_participant"></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="rdfs:label" xml:lang="en" content="has participant"></div>
+        <div property="sio:subset" content="core"></div>
+      </div>
+    </div>
+    <div property="rdfs:label" xml:lang="en" content="has agent"></div>
+    <div property="sio:equivalentTo" content="OBO_REL:has_agent"></div>
+    <div property="dcterms:description" xml:lang="en" content="has agent is a relation between a process and an entity, where the entity is present throughout the process and is a causal participant in the process."></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000015">
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="ice+"></div>
+    <div property="dcterms:description" xml:lang="en" content="information content entity is an object that requires some background knowledge or procedure to correctly interpret."></div>
+    <div property="rdfs:label" xml:lang="en" content="information content entity"></div>
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000776"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000631">
+    <div property="sio:hasSynonym" content="mentions"></div>
+    <div property="rdfs:label" xml:lang="en" content="references"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000628"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="dcterms:description" xml:lang="en" content="references is a relation between one entity and the entity that it makes reference to by name, but is not described by it."></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000014">
+    <div property="sio:subset" content="core"></div>
+    <div property="rdfs:label" xml:lang="en" content="disposition"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:example" xml:lang="en" content="solubility (to dissolve when put in fluid); fragility (disposition to break when dropped)"></div>
+    <div property="dcterms:description" xml:lang="en" content="A disposition is the tendency of a capability to be exhibited under certain conditions or in response to a certain stimulus (trigger)."></div>
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000112"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000017">
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000112"></div>
+    <div property="dcterms:description" xml:lang="en" content="A function is a capability that satisfies some agentive objective, or (evolutionary) optimization."></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="function"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_001195">
+    <div property="sio:subset" content="behaviour+"></div>
+    <div property="rdfs:label" xml:lang="en" content="behaviour"></div>
+    <div property="dcterms:description" xml:lang="en" content="Behaviour is the set of actions and mannerisms made by systems (biological or otherwise) in response to stimuli or inputs, whether internal or external, conscious or subconscious, overt or covert, and voluntary or involuntary."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000006"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000570">
+    <div property="dcterms:description" xml:lang="en" content="movement is the process in which an object is spatially displaced."></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="rdfs:label" xml:lang="en" content="movement"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000006"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000230">
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000132"></div>
+    <div property="dcterms:description" xml:lang="en" content="has input is a relation between a process and an entity, where the entity is present at the beginning of the process."></div>
+    <div property="rdfs:label" xml:lang="en" content="has input"></div>
+    <div property="sio:subset" xml:lang="en" content="sadi"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000004">
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000776"></div>
+    <div property="dcterms:description" xml:lang="en" content="A material entity is a physical entity that is spatially extended, exists as a whole at any point in time and has mass."></div>
+    <div property="rdfs:label" xml:lang="en" content="material entity"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000216">
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="has measurement value"></div>
+    <div property="dcterms:description" xml:lang="en" content="has measurement value is a relation between a quality/realizable and a measurement value."></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000008"></div>
+    <div property="sio:subset" content="core"></div>
+  </div>
+  <div typeof="rdfs:Resource" about="http://semanticscience.org/ontology/sio.owl">
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div rel="owl:versionIRI" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="owl:versionInfo" content="sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000593">
+    <div property="rdfs:label" xml:lang="en" content="interacting"></div>
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000006"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="dcterms:description" xml:lang="en" content="interacting is a process characterized by the interaction between two or more entities."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000668">
+    <div property="dcterms:description" xml:lang="en" content="in relation to is a comparative relation to indicate that the instance of the class holding the relation exists in relation to another entity."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000628"></div>
+    <div property="rdfs:label" xml:lang="en" content="in relation to"></div>
+  </div>
+  <div typeof="owl:TransitiveProperty" about="http://semanticscience.org/resource/SIO_000128">
+    <div property="dcterms:description" xml:lang="en" content="A is contained in B iff the spatial region occupied by A is part of the spatial region occupied by B and A is not part of B. [T]"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000061">
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000322"></div>
+        <div property="sio:equivalentTo" content="OBO_REL:located_in"></div>
+        <div property="sio:example" xml:lang="en" content="A parasite in the interior of a person's intestine is located in their intestinal lumen."></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#TransitiveProperty"></div>
+        <div property="dcterms:description" xml:lang="en" content="A is located in B iff the spatial region occupied by A is part of the spatial region occupied by B. [T][R]"></div>
+        <div property="rdfs:label" xml:lang="en" content="is located in"></div>
+      </div>
+    </div>
+    <div property="rdfs:label" xml:lang="en" content="is contained in"></div>
+    <div property="sio:equivalentTo" content="OBO_REL:contained_in"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000210">
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="dcterms:description" xml:lang="en" content="a represents b when a serves as a sign, symbol or model of b."></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000628"></div>
+    <div property="rdfs:label" xml:lang="en" content="represents"></div>
+    <div property="sio:subset" content="core"></div>
+  </div>
+  <div typeof="owl:ObjectProperty" about="http://semanticscience.org/resource/SIO_000243">
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#SymmetricProperty"></div>
+    <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000322"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#TransitiveProperty"></div>
+    <div property="dcterms:description" xml:lang="en" content="A transitive, symmetric, temporal relation in which one entity is causally related with another non-identical entity."></div>
+    <div property="rdfs:label" xml:lang="en" content="is causally related with"></div>
+    <div property="sio:subset" content="core"></div>
+  </div>
+  <div typeof="owl:SymmetricProperty" about="http://semanticscience.org/resource/SIO_000001">
+    <div property="sio:subset" content="core"></div>
+    <div property="sio:subset" content="relations+"></div>
+    <div property="rdfs:label" xml:lang="en" content="is related to"></div>
+    <div property="dcterms:description" xml:lang="en" content="A is related to B iff there is some relation between A and B."></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="schema:comment" content="'is related to' is the top level relation in SIO"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000776">
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="dcterms:description" xml:lang="en" content="An object is an entity that is wholly identifiable at any instant of time during which it exists."></div>
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000000"></div>
+    <div property="rdfs:label" xml:lang="en" content="object"></div>
+  </div>
+  <div typeof="owl:IrreflexiveProperty" about="http://semanticscience.org/resource/SIO_000093">
+    <div property="rdfs:label" xml:lang="en" content="is proper part of"></div>
+    <div property="dcterms:description" xml:lang="en" content="is proper part of is an asymmetric, irreflexive (normally transitive) relation between a part and its distinct whole."></div>
+    <div property="sio:equivalentTo" content="OBO_REL:proper_part_of"></div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"></div>
+    <div rel="rdfs:subPropertyOf">
+      <div typeof="owl:ReflexiveProperty" about="http://semanticscience.org/resource/SIO_000068">
+        <div property="sio:equivalentTo" content="OBO_REL:part_of"></div>
+        <div property="dcterms:description" xml:lang="en" content="is part of is a transitive, reflexive and anti-symmetric mereological relation between a whole and itself or a part and its whole."></div>
+        <div property="rdfs:label" xml:lang="en" content="is part of"></div>
+        <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+        <div property="sio:subset" content="core"></div>
+        <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+        <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#TransitiveProperty"></div>
+        <div rel="rdfs:subPropertyOf" resource="http://semanticscience.org/resource/SIO_000061"></div>
+      </div>
+    </div>
+    <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#ObjectProperty"></div>
+    <div property="sio:subset" content="core"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000112">
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000340"></div>
+    <div property="dcterms:description" xml:lang="en" content="A capability is a realizable entity whose basis lies in one or more parts or qualities and reflects possibility of an entity to behave in a specified way under certain conditions or in response to a certain stimulus (trigger)."></div>
+    <div property="rdfs:label" xml:lang="en" content="capability"></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="sio:subset" content="capability+"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000340">
+    <div property="sio:subset" content="core"></div>
+    <div property="rdfs:label" xml:lang="en" content="realizable entity"></div>
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000614"></div>
+    <div property="dcterms:description" xml:lang="en" content="A realizable entity is an attribute that is exhibited under some condition and is realized in some process."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000614">
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000000"></div>
+    <div property="dcterms:description" xml:lang="en" content="An attribute is a characteristic of some entity."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="attribute"></div>
+    <div property="sio:subset" content="core"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000006">
+    <div rel="rdfs:subClassOf" resource="http://semanticscience.org/resource/SIO_000000"></div>
+    <div property="dcterms:description" xml:lang="en" content="A process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="process"></div>
+    <div property="sio:subset" content="core"></div>
+    <div property="sio:subset" content="process+"></div>
+  </div>
+  <div typeof="owl:Class" about="http://semanticscience.org/resource/SIO_000000">
+    <div property="sio:subset" content="core"></div>
+    <div property="dcterms:description" xml:lang="en" content="Every thing is an entity."></div>
+    <div rel="rdfs:isDefinedBy" resource="http://semanticscience.org/ontology/sio/v1.43/sio-subset-core.owl"></div>
+    <div property="rdfs:label" xml:lang="en" content="entity"></div>
+  </div>
+</div>
